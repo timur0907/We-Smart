@@ -7,7 +7,7 @@ function add_class_delay() {
     document.querySelector('.body').classList.remove('active');
 }
 
-setTimeout(add_class_delay, 2000);
+setTimeout(add_class_delay, 10000);
 
 // pre_img script end
 
