@@ -1,0 +1,201 @@
+@import url(fonts.css);
+@import url(footer.css);
+@import url(media.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat";
+    font-weight: 400; 
+}
+
+.body.active {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1326px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header start */
+
+.burger {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 24px rgba(28, 44, 68, 0.12);
+    background-color: #fff;
+}
+
+
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.header_list {
+    display: flex;
+    gap: 32px;
+}
+
+.link {
+    color: #151628;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.7s;
+}
+.link:hover {
+    color: #2B63E3;
+}
+
+
+/* our team */
+
+.our_team {
+    width: 100%;
+    padding: 160px 0 80px 0;
+    background-color: #F3F4F6;
+    margin-bottom: 80px;
+}
+
+.team_inner {
+    display: flex;
+    gap: 73px;
+    align-items: center;
+}
+
+.team_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 864px;
+    width: 100%;
+}
+
+.team_img {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.team_img::before {
+    content: '';
+    background:  linear-gradient(0deg, rgba(21, 22, 40, 0.8), rgba(21, 22, 40, 0.8)), url(.png);
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.team_name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 5;text-align: center;
+    width: 106px;
+    line-height: 20px;
+}
+
+.our_team_title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #151628;
+}
+
+.card {
+    display: flex;
+    max-width: 1076px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+    margin-left: auto;
+}
+
+.info_team {
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+
+
+.card_title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #151628;
+}
+
+.card_job {
+    font-weight: 500;
+    color: #70798B;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.job_desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #151628;
+    line-height: 24px;
+}
+
+.card_contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.personal_number, .corporation_number, .card_email {
+    font-weight: 600;
+    color: #151628;
+    font-size: 16px;
+    line-height: 24px;
+}
